@@ -3,9 +3,9 @@ package com.cloudbees.assessment.entity;
 public class Ticket {
 
     private Train train;
-    private User user;
+    private TrainUser user;
 
-    public Ticket(Train train, User user) {
+    public Ticket(Train train, TrainUser user) {
         this.train = train;
         this.user = user;
     }
@@ -18,11 +18,11 @@ public class Ticket {
         this.train = train;
     }
 
-    public User getUser() {
+    public TrainUser getUser() {
         return user;
     }
 
-    public void setUser(User user) {
+    public void setUser(TrainUser user) {
         this.user = user;
     }
 }
