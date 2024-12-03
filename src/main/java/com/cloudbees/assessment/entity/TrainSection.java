@@ -4,12 +4,18 @@ import java.util.HashMap;
 
 public class TrainSection {
 
-    private String name;
     private int capacity;
     private HashMap<Integer,User> seats = new HashMap<>();
 
-    public TrainSection(String name, int capacity) {
-        this.name = name;
+    public TrainSection(int capacity) {
         this.capacity = capacity;
+    }
+
+    public HashMap<Integer, User> getSeats() {
+        return seats;
+    }
+
+    public void setSeats(HashMap<Integer, User> seats) {
+        this.seats = seats;
     }
 }
